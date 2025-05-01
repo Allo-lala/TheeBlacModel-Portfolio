@@ -12,7 +12,7 @@ interface ModelProps {
 const Model: React.FC<ModelProps> = ({ text }) => {
   const meshRef = useRef<Mesh>(null);
   
-  useFrame((state) => {
+  useFrame((state: { clock: { getElapsedTime: () => number } }) => {
     if (meshRef.current) {
       meshRef.current.rotation.x = Math.sin(state.clock.getElapsedTime() * 0.3) * 0.1;
       meshRef.current.rotation.y = Math.sin(state.clock.getElapsedTime() * 0.2) * 0.1;
@@ -51,7 +51,7 @@ const Model: React.FC<ModelProps> = ({ text }) => {
 const AbstractShapes = () => {
   const group = useRef<Group>(null);
   
-  useFrame((state) => {
+  useFrame((state: { clock: { getElapsedTime: () => number } }) => {
     if (group.current) {
       group.current.rotation.y = state.clock.getElapsedTime() * 0.1;
     }

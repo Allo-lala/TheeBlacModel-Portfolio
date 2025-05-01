@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import ModelCanvas from './three/ModelCanvas';
 
@@ -14,8 +14,8 @@ const HeroSection = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <img
-          src="https://i.postimg.cc/htDF7fm5/Whats-App-Image-2025-05-01-at-13-05-28.jpg"
-          alt="Jane model landscape"
+          src="https://images.pexels.com/photos/8386668/pexels-photo-8386668.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          alt="Fashion model portrait"
           className="w-full h-full object-cover"
         />
       </div>
@@ -38,7 +38,7 @@ const HeroSection = () => {
             className="mb-4"
           >
             <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-light tracking-wide text-white">
-              JANE MUKISA
+              JANE
             </h1>
           </motion.div>
 

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -29,7 +29,7 @@ const Header = () => {
     { name: 'About', href: '#about' },
     { name: 'Gallery', href: '#gallery' },
     { name: 'Brands', href: '#brands' },
-    { name: 'Press', href: '#press' },
+    // { name: 'Press', href: '#press' },
     { name: 'Contact', href: '#contact' },
   ];
 

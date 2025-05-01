@@ -1,10 +1,9 @@
-import React from 'react';
 import Header from './components/Header';
 import HeroSection from './components/HeroSection';
 import BrandsSection from './components/BrandsSection';
 import GallerySection from './components/GallerySection';
 import AboutSection from './components/AboutSection';
-import PressSection from './components/PressSection';
+// import PressSection from './components/PressSection';
 import ContactSection from './components/ContactSection';
 import Footer from './components/Footer';
 import { ScrollToTop } from './components/ui/ScrollToTop';
@@ -20,7 +19,7 @@ function App() {
           <AboutSection />
           <GallerySection />
           <BrandsSection />
-          <PressSection />
+          {/* <PressSection /> */}
           <ContactSection />
         </AnimatePresence>
       </main>

@@ -230,7 +230,7 @@ const ContactSection = () => {
               For urgent matters, please contact Jane's management team directly:
             </p>
             <p className="mt-2">
-              <a href="mailto:management@janemodel.com" className="text-primary-900 hover:text-accent-600 transition-colors">
+              <a href="mailto:janemukisa16@gmail.com<" className="text-primary-900 hover:text-accent-600 transition-colors">
                 management@janemodel.com
               </a>
             </p>

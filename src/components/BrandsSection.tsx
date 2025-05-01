@@ -1,4 +1,3 @@
-import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { Carousel } from 'react-responsive-carousel';
@@ -12,30 +11,30 @@ const BrandsSection = () => {
 
   const brands = [
     {
-      name: 'Chanel',
-      logo: 'https://seeklogo.com/images/C/Chanel-logo-4417297EC8-seeklogo.com.png',
-      description: 'Collaborated on exclusive fragrance campaigns and runway shows.',
+      name: 'Morelli Agency',
+      logo: 'https://i.ibb.co/DfLjtXkf/Logo-Moreli-Modeling.webp',
+      description: 'Collaborated on exclusive luxury campaigns and runway shows.',
     },
     {
-      name: 'Balenciaga',
-      logo: 'https://seeklogo.com/images/B/balenciaga-logo-81DE85C0C3-seeklogo.com.png',
+      name: 'Skills Klinic',
+      logo: 'https://i.ibb.co/XZSvyh3g/Skills-Klinic.png',
       description: 'Featured model for seasonal collections and global campaigns.',
     },
     {
-      name: 'Fenty Beauty',
-      logo: 'https://seeklogo.com/images/F/fenty-beauty-by-rihanna-logo-BB2F99A9E2-seeklogo.com.png',
+      name: ' Rosy Lips',
+      logo: 'https://i.ibb.co/4w0tJS1g/Rosy-Lips.jpg',
       description: 'Brand ambassador for makeup line and special collections.',
     },
     {
-      name: 'Zara',
-      logo: 'https://seeklogo.com/images/Z/zara-logo-538B740904-seeklogo.com.png',
+      name: 'Seeek Solution',
+      logo: 'https://i.ibb.co/ccC0M3TX/seeksolutions.jpg',
       description: 'Led multiple campaign shoots for seasonal collections.',
     },
-    {
-      name: 'Nike',
-      logo: 'https://seeklogo.com/images/N/nike-logo-7946232FA3-seeklogo.com.png',
-      description: 'Sports and athleisure campaign model for special editions.',
-    },
+    // {
+    //   name: 'Nike',
+    //   logo: 'https://seeklogo.com/images/N/nike-logo-7946232FA3-seeklogo.com.png',
+    //   description: 'Sports and athleisure campaign model for special editions.',
+    // },
   ];
 
   return (
@@ -49,7 +48,7 @@ const BrandsSection = () => {
         >
           <h2 className="text-3xl md:text-5xl font-serif font-light mb-4">Brands & Collaborations</h2>
           <p className="text-primary-700 max-w-2xl mx-auto">
-            Jane has partnered with prestigious global brands, bringing her unique presence to their campaigns and collections.
+            I have  partnered with prestigious global brands, bringing my unique presence to their campaigns and collections.
           </p>
         </motion.div>
 
