@@ -45,9 +45,9 @@ const AboutSection = () => {
               <div>
                 <h3 className="text-xl font-serif mb-2">Expertise</h3>
                 <ul className="text-primary-700 space-y-1">
-                  <li>• Editorial Photography</li>
-                  <li>• Runway Modeling</li>
-                  <li>• Commercial Campaigns</li>
+                  <li>• Photography</li>
+                  <li>• Runway </li>
+                  <li>• Campaigns</li>
                   <li>• Fashion Films</li>
                 </ul>
               </div>

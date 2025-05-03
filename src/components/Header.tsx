@@ -29,20 +29,19 @@ const Header = () => {
     { name: 'About', href: '#about' },
     { name: 'Gallery', href: '#gallery' },
     { name: 'Brands', href: '#brands' },
-    // { name: 'Press', href: '#press' },
     { name: 'Contact', href: '#contact' },
   ];
 
   return (
-    <header 
+    <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
         scrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'
       }`}
     >
       <div className="container mx-auto px-4 md:px-6">
         <div className="flex items-center justify-between">
-          <motion.a 
-            href="#home" 
+          <motion.a
+            href="#home"
             className="text-2xl font-serif font-light tracking-wider"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -71,7 +70,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <div className="md:hidden">
-            <button 
+            <button
               onClick={toggleMenu}
               className={`text-2xl focus:outline-none ${
                 scrolled ? 'text-primary-900' : 'text-primary-900'
@@ -86,14 +85,22 @@ const Header = () => {
       {/* Mobile Navigation Menu */}
       <AnimatePresence>
         {isOpen && (
-          <motion.div 
-            className="fixed inset-0 bg-white z-50 md:hidden pt-20"
+          <motion.div
+            className="fixed inset-0 bg-white z-50 md:hidden pt-20 px-4"
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: '100vh' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.3 }}
           >
-            <div className="container mx-auto px-4 py-8 flex flex-col space-y-6">
+            {/* Close Button inside the overlay */}
+            <div className="absolute top-6 right-6">
+              <button onClick={toggleMenu} className="text-primary-900 text-2xl">
+                <X size={28} />
+              </button>
+            </div>
+
+            {/* Navigation Items */}
+            <div className="container mx-auto pt-16 flex flex-col space-y-6">
               {navigationItems.map((item, index) => (
                 <motion.a
                   key={item.name}

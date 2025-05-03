@@ -3,10 +3,37 @@ import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 
 const portraits = [
-  'https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg',
-  'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg',
-  'https://images.pexels.com/photos/2748239/pexels-photo-2748239.jpeg',
-  'https://images.pexels.com/photos/1839906/pexels-photo-1839906.jpeg',
+  'https://i.ibb.co/LXvrPnFS/gallery-3.jpg',,
+  'https://i.ibb.co/KxWTWp44/gallery-5.jpg',
+  'https://i.ibb.co/G4Pmp08V/gallery-4.jpg',
+  'https://i.ibb.co/ynWvCyL9/gallery-6.jpg',
+  'https://i.ibb.co/vxr8brX9/IMG-1686.jpg',
+  'https://i.ibb.co/W4GhfJVf/IMG-1871.jpg',
+  'https://i.ibb.co/HL9DGsxV/IMG-1900.jpg',
+  'https://i.ibb.co/5tK4RDR/IMG-1896.jpg',
+  'https://i.ibb.co/JRNRqDH8/IMG-1901.jpg',
+  'https://i.ibb.co/3JV1X14/IMG-1907.jpg',
+  'https://i.ibb.co/5W84M0kf/IMG-3306.jpg',
+  'https://i.ibb.co/bMsWy9rL/IMG-3307.jpg',
+  'https://i.ibb.co/fGCFPT1C/IMG-3308.jpg',
+  'https://i.ibb.co/67hzxWh0/IMG-3335.jpg',
+  'https://i.ibb.co/bYxX7Jy/IMG-3336.jpg',
+  'https://i.ibb.co/MyCXdzg3/IMG-3337.jpg',
+  'https://i.ibb.co/gbx8tMx8/IMG-3339.jpg',
+  'https://i.ibb.co/5hXZYtbM/IMG-9565.jpg',
+  'https://i.ibb.co/PZbWc8cR/IMG-9566.jpg',
+  'https://i.ibb.co/Q3tTRVZy/IMG-9569.jpg',
+  'https://i.ibb.co/KpN5MS4X/IMG-9567.jpg',
+  'https://i.ibb.co/Vpt5nDk1/IMG-9570.jpg',
+  'https://i.ibb.co/vCp2zxVq/IMG-9572.jpg',
+  'https://i.ibb.co/wFwgFHkr/mmm.png',
+  'https://i.ibb.co/8LT4mmkT/Whats-App-Image-2023-10-17-at-12-01-13.jpg',
+  'https://i.ibb.co/hR8mksMq/Whats-App-Image-2023-10-17-at-11-57-52.jpg',
+  'https://i.ibb.co/j9LzbhBJ/Whats-App-Image-2023-10-17-at-12-01-14.jpg',
+  'https://i.ibb.co/LXvrPnFS/gallery-3.jpgimages.pexels.com/photos/1704488/pexels-photo-1704488.jpeg',
+  // 'https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg',
+  // 'https://images.pexels.com/photos/2748239/pexels-photo-2748239.jpeg',
+  // 'https://images.pexels.com/photos/1839906/pexels-photo-1839906.jpeg',
 ];
 
 const HeroSection = () => {
@@ -37,7 +64,7 @@ const HeroSection = () => {
       {/* Fullscreen Video */}
       <section id="home" className="relative w-full h-screen overflow-hidden">
         <ReactPlayer
-          url="https://youtu.be/OwSt0Quygno?si=dhQQiAVebkrqyV-X"
+          url="https://youtu.be/sn4h20rdvKw?si=KHVodrTvLkA-p9lC&t=3"
           playing
           muted
           controls={false}
