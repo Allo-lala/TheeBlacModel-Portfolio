@@ -1,7 +1,7 @@
-import React, { useRef, useEffect, useState, Suspense } from 'react';
+i here is a working code, i want every letter to be having a single better fall, I can even see the sparkles and camera fly. import React, { useRef, useEffect, useState, Suspense } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { Text3D, Environment, Center, OrbitControls, Sparkles } from '@react-three/drei';
-import { Mesh } from 'three';
+import { Mesh, Vector3 } from 'three';
 
 const FONT_URL = 'https://threejs.org/examples/fonts/helvetiker_regular.typeface.json';
 
@@ -51,7 +51,7 @@ const FallingLetter = ({
     return () => clearTimeout(reset);
   }, [landed, loopDelay]);
 
-  useFrame((state: { clock: { getElapsedTime: () => number } }) => {
+  useFrame((state) => {
     if (ref.current && landed) {
       const t = state.clock.getElapsedTime();
       ref.current.rotation.y = Math.sin(t + index) * 0.05;
@@ -120,4 +120,4 @@ const ModelCanvas: React.FC<{ text: string }> = ({ text }) => {
   );
 };
 
-export default ModelCanvas;
+export default ModelCanvas; the word should rotate, let the letters keep falling and after the last one there should be a delay and then repeat, you should also find a better font
