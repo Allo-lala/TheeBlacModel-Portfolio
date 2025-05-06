@@ -82,7 +82,7 @@ const Footer = () => {
           </nav>
           
           <p className="text-primary-400 text-sm">
-            &copy; {currentYear} Theeblacmodle. All rights reserved.
+            &copy; {currentYear} Theeblacmodel. All rights reserved.
           </p>
         </div>
       </div>
