@@ -13,28 +13,54 @@ const BrandsSection = () => {
     {
       name: 'Morelli Agency',
       logo: 'https://i.ibb.co/DfLjtXkf/Logo-Moreli-Modeling.webp',
-      description: 'Collaborated on exclusive luxury campaigns and runway shows.',
+      description: ' ',
     },
     {
       name: 'Skills Klinic',
       logo: 'https://i.ibb.co/XZSvyh3g/Skills-Klinic.png',
-      description: 'Featured model for seasonal collections and global campaigns.',
+      description: ' ',
+    },
+    {
+      name: ' Absa Bank',
+      logo: 'https://www.absa.co.ug/content/dam/uganda/absa/logos/absa-logo-bg.png',
+      description: '',
     },
     {
       name: ' Rosy Lips',
       logo: 'https://i.ibb.co/4w0tJS1g/Rosy-Lips.jpg',
-      description: 'Brand ambassador for makeup line and special collections.',
+      description: ' ',
     },
     {
-      name: 'Seeek Solution',
-      logo: 'https://i.ibb.co/ccC0M3TX/seeksolutions.jpg',
-      description: 'Led multiple campaign shoots for seasonal collections.',
+      name: 'Next Media',
+      logo: 'https://nextmedia.co.ug/wp-content/uploads/2022/10/Next-Media-cropped-logo.png',
+      description: ' ',
     },
-    // {
-    //   name: 'Nike',
-    //   logo: 'https://seeklogo.com/images/N/nike-logo-7946232FA3-seeklogo.com.png',
-    //   description: 'Sports and athleisure campaign model for special editions.',
-    // },
+    {
+      name: 'Victoria University',
+      logo: 'https://vu.ac.ug/_nuxt/img/vu-logo-with-words.ac2cb23.png',
+      description: '',
+    },
+    {
+      name: 'Airtel Uganda',
+      logo: 'https://cdn-webportal.airtelstream.net/website/uganda/assets/images/logo.svg',
+      description: '',
+    },
+    {
+      name: 'swang ',
+      logo: 'https://swangzavenue.com/wp-content/uploads/2020/03/SWANGZ-2022-logo-2.png',
+      description: '',
+    },
+
+    {
+      name: 'Radiant',
+      logo: 'https://movitproducts.com/wp-content/uploads/2022/02/radiant-logo-1.jpg',
+      description: '',
+    },
+    {
+      name: 'Movit ',
+      logo: 'https://movitproducts.com/wp-content/uploads/2022/02/logo-pink-1.png',
+      description: '',
+    },
   ];
 
   return (
@@ -48,7 +74,7 @@ const BrandsSection = () => {
         >
           <h2 className="text-3xl md:text-5xl font-serif font-light mb-4">Brands & Collaborations</h2>
           <p className="text-primary-700 max-w-2xl mx-auto">
-            I have  partnered with prestigious global brands, bringing my unique presence to their campaigns and collections.
+            I have partnered with prestigious brands, bringing unique presence to their campaigns and collections.
           </p>
         </motion.div>
 
@@ -92,8 +118,11 @@ const BrandsSection = () => {
             infiniteLoop={true}
             autoPlay={true}
             interval={3000}
+            transitionTime={800}
             centerMode={true}
             centerSlidePercentage={80}
+            stopOnHover={false}
+            swipeScrollTolerance={1}
           >
             {brands.map((brand) => (
               <div key={brand.name} className="px-4 pb-12">

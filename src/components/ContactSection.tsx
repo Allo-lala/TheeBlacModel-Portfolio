@@ -227,11 +227,11 @@ const ContactSection = () => {
           >
             <h3 className="text-xl font-serif mb-4">Management Contact</h3>
             <p className="text-primary-700">
-              For urgent matters, please contact Jane's management team directly:
+              For urgent matters, please contact the management team directly:
             </p>
             <p className="mt-2">
               <a href="mailto:janemukisa16@gmail.com<" className="text-primary-900 hover:text-accent-600 transition-colors">
-                management@janemodel.com
+                management@theeblacmodel.com
               </a>
             </p>
           </motion.div>
