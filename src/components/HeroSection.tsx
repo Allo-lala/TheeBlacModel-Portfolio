@@ -1,4 +1,3 @@
-import ReactPlayer from 'react-player/youtube';
 import { useKeenSlider } from 'keen-slider/react';
 import 'keen-slider/keen-slider.min.css';
 
@@ -80,21 +79,25 @@ const HeroSection = () => {
     <div className="flex flex-col">
       {/* Fullscreen Video */}
       <section id="home" className="relative w-full h-screen overflow-hidden">
-        <ReactPlayer
-          url="https://youtu.be/sn4h20rdvKw?si=KHVodrTvLkA-p9lC&t=3"
-          playing
-          muted
-          controls={false}
-          loop
-          width="100%"
-          height="100%"
-          className="absolute top-0 left-0"
+        {/* Background Image */}
+        <div
+          className="absolute top-0 left-0 w-full h-full bg-center bg-cover"
+          style={{
+            backgroundImage: "url('https://i.ibb.co/ksP9xhLs/six.jpg')",
+          }}
         />
         <div className="absolute inset-0 bg-black/40 z-10" />
         <div className="absolute inset-0 z-20 flex items-center justify-center text-white">
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-serif font-light tracking-wide">
             THEEBLACMODEL
           </h1>
+        </div>
+        {/* Scroll Down Indicator */}
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center">
+          <span className="text-white text-lg mb-2">Scroll Down</span>
+          <svg className="animate-bounce" width="24" height="24" fill="none" stroke="white" strokeWidth="2" viewBox="0 0 24 24">
+            <path d="M12 5v14M19 12l-7 7-7-7"/>
+          </svg>
         </div>
       </section>
 
